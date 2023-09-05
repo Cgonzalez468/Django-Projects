@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hb^)$gx-58qqg1_%#2c(%!^%ye^whwgndsur*pewn*x3)1!x)0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','localhost']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'MiPrimerApp',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'MiPrimerProyecto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['MiPrimerApp/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
